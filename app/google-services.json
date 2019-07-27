@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "1063404155821",
+    "firebase_url": "https://materialform-58c25.firebaseio.com",
+    "project_id": "materialform-58c25",
+    "storage_bucket": "materialform-58c25.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1063404155821:android:d061db91e2966393",
+        "android_client_info": {
+          "package_name": "com.client.vpman.materialform"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1063404155821-g04hvs7iduc1004u2l7m5kg6stsic7g3.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.client.vpman.materialform",
+            "certificate_hash": "a3be50c033727c6925f9f8581a2584a562ef0059"
+          }
+        },
+        {
+          "client_id": "1063404155821-3fdta35o5jp2vju2pu1n2ct0dosprrs2.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAdenxXBMF0qEtwGkGNJ4nZcGcWHqfSjc4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1063404155821-3fdta35o5jp2vju2pu1n2ct0dosprrs2.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

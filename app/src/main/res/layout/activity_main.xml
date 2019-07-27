@@ -1,0 +1,260 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+<androidx.appcompat.widget.Toolbar
+    android:layout_width="match_parent"
+    android:layout_height="?attr/actionBarSize"
+    android:background="#86D363"
+    app:title="Fill Form"
+    android:id="@+id/tool"
+    app:titleTextColor="#FCFCFC"
+    />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tool"
+        app:hintTextColor="#866FA7"
+        android:padding="16dp"
+        android:textColorHint="#866FA7"
+        android:id="@+id/edNameLat"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editName"
+            android:outlineProvider="none"
+            android:inputType="text"
+            android:background="@drawable/edit_background"
+            android:hint="Name"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+<!--<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="*Required"
+    android:padding="4dp"
+    android:id="@+id/reqd"
+    android:layout_below="@+id/edNameLat"/>-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Required"
+            android:padding="4dp"
+            android:id="@+id/reqd"
+            android:textColor="#866FA7"
+            android:layout_below="@+id/edNameLat"/>
+
+   <!-- <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:layout_width="200dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="12dp"
+        android:hint="City"
+        android:padding="8dp"
+        android:id="@+id/city"
+        app:hintTextColor="#866FA7"
+        android:textColorHint="#866FA7"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:background="@drawable/edit_background"
+        android:layout_below="@+id/reqd"
+        />-->
+
+        <Spinner
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:layout_marginStart="12dp"
+            android:padding="8dp"
+            android:id="@+id/city"
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/reqd"
+
+            />
+<!--
+    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="14dp"
+        android:hint="State"
+        android:padding="8dp"
+        android:id="@+id/state"
+        app:hintTextColor="#866FA7"
+        android:textColorHint="#866FA7"
+        android:layout_toRightOf="@+id/city"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        android:background="@drawable/edit_background"
+        android:layout_below="@+id/reqd"
+        />-->
+        <Spinner
+            android:layout_width="150dp"
+            android:layout_height="50dp"
+            android:layout_toEndOf="@+id/city"
+            android:layout_marginStart="14dp"
+            android:padding="8dp"
+            android:id="@+id/state"
+
+            android:background="@drawable/edit_background"
+            android:layout_below="@+id/reqd"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/city"
+        app:hintTextColor="#866FA7"
+        android:padding="16dp"
+        android:textColorHint="#866FA7"
+        android:id="@+id/edNumberLat"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editNumber"
+            android:outlineProvider="none"
+            android:inputType="number"
+            android:background="@drawable/edit_background"
+            android:hint="Mobile No"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+  <!--  <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Required"
+        android:padding="4dp"
+        android:id="@+id/reqd1"
+        android:layout_below="@+id/edNumberLat"/>-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Required"
+            android:padding="4dp"
+            android:id="@+id/reqd1"
+            android:textColor="#866FA7"
+
+            android:layout_below="@+id/edNumberLat"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reqd1"
+        app:hintTextColor="#866FA7"
+        android:padding="16dp"
+        android:textColorHint="#866FA7"
+        android:id="@+id/edDesignationLat"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editDesiginition"
+            android:outlineProvider="none"
+            android:inputType="text"
+            android:background="@drawable/edit_background"
+            android:hint="Designition"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+       />-->
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Required"
+            android:padding="4dp"
+            android:id="@+id/reqd2"
+            android:textColor="#866FA7"
+
+            android:layout_below="@+id/edDesignationLat"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reqd2"
+        app:hintTextColor="#866FA7"
+        android:padding="16dp"
+        android:textColorHint="#866FA7"
+        android:id="@+id/edEmailLat"
+
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox"
+        >
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editEmail"
+            android:outlineProvider="none"
+            android:inputType="textEmailAddress"
+            android:background="@drawable/edit_background"
+            android:hint="Email Address"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <!--<TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="*Required"
+        android:padding="4dp"
+        android:id="@+id/reqd3"
+        android:layout_below="@+id/edEmailLat"/>-->
+
+        <com.google.android.material.textview.MaterialTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="*Required"
+            android:padding="4dp"
+            android:id="@+id/reqd3"
+            android:textColor="#866FA7"
+
+            android:layout_below="@+id/edEmailLat"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/reqd3"
+        app:hintTextColor="#866FA7"
+        android:padding="16dp"
+        android:textColorHint="#866FA7"
+        android:id="@+id/edCardNumberLat"
+        style="@style/Widget.MaterialComponents.TextInputLayout.FilledBox">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/editCardNumber"
+            android:outlineProvider="none"
+            android:inputType="number"
+            android:background="@drawable/edit_background"
+            android:hint="Card Number"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.button.MaterialButton
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Register"
+            android:backgroundTint="#866FA7"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="8dp"
+            android:id="@+id/Register"
+            android:layout_below="@+id/edCardNumberLat"
+            style="@style/Widget.MaterialComponents.Button"
+            />
+    </RelativeLayout>
+
+</ScrollView>
